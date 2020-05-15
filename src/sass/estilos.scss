@@ -36,21 +36,25 @@ body {
     padding: 0 var(--wrapperSpace);
 }
 
+@mixin title  {
+    font-size: 2.5em;
+    color: var(--darkBlue);
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
 .title{
     &__h1 {
-        font-size: 2.5em;
-        color: var(--darkBlue);
-        font-weight: 300;
-        line-height: 1.2;
-        margin: 0;
-        margin-bottom: .5em;
+        @include title;
     }
     &__h2 {
-        @extend .title__h1;
+        @include title;
         font-size: 1.5em;
     }
     &__h3 {
-        @extend .title__h1;
+        @include title;
         font-size: 1em;
     }
 }
