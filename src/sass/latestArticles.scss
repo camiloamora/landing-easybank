@@ -1,5 +1,4 @@
 .latestArticles{
-    border: solid 1px red;
     padding: 5em 0;
     background: var(--lightGray);
     .title__h1 {
@@ -13,6 +12,7 @@
         border-radius: .5em;
         overflow: hidden;
         background: var(--white);
+        margin-bottom: 1.8em;
         &-content {
             padding: 1.9em;
         }
