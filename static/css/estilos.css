@@ -1,0 +1,208 @@
+.header {
+  display: flex;
+  padding: 1em 1.5em;
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: center;
+  padding-bottom: 5em;
+}
+.hero .copy {
+  margin-bottom: 2.5em;
+}
+.hero__image {
+  height: 300px;
+  margin: 0 calc(-1 * var(--wrapperSpace));
+  background: url("../images/image-mockups.png") bottom center no-repeat, url("../images/bg-intro-mobile.svg") center no-repeat;
+  background-size: 345px, cover;
+  margin-bottom: 1.2em;
+}
+
+.menu {
+  width: 30px;
+  background: url("../images/icon-hamburger.svg") no-repeat center;
+}
+
+.why {
+  text-align: center;
+  background: var(--gray);
+  padding: 5em 0;
+}
+.why .copy {
+  margin-bottom: 4em;
+  font-size: 0.9em;
+}
+.why__item .copy {
+  margin-bottom: 2em;
+}
+.why__item img {
+  margin-bottom: 1.4em;
+}
+
+.latestArticles {
+  padding: 5em 0;
+  background: var(--lightGray);
+}
+.latestArticles .title__h1 {
+  text-align: center;
+}
+.latestArticles__latestArticles__grid {
+  display: grid;
+  grid-row-gap: 2em;
+}
+.latestArticles__item {
+  border-radius: 0.5em;
+  overflow: hidden;
+  background: var(--white);
+  margin-bottom: 1.8em;
+}
+.latestArticles__item-content {
+  padding: 1.9em;
+}
+.latestArticles__item .copy {
+  color: var(--blue);
+}
+.latestArticles__item small {
+  color: var(--blue);
+  margin-bottom: 1em;
+  display: block;
+}
+.latestArticles__item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer {
+  background: var(--darkBlue);
+  color: var(--white);
+  padding: 2em 0;
+  text-align: center;
+}
+.footer svg {
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.footer__link {
+  display: block;
+  color: var(--gray);
+  text-decoration: none;
+  margin-bottom: 2em;
+}
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(5, 25px);
+  grid-column-gap: 1em;
+  justify-content: center;
+  margin: 2.4em 0;
+}
+.footer__copyright {
+  color: var(--blue);
+  margin-top: 2.5em;
+}
+
+:root {
+  --blue: hsl(233, 8%, 62%);
+  --gray: hsl(220, 16%, 96%);
+  --lightGray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --darkBlue: hsl(233, 26%, 24%);
+  --limaGreen: hsl(136, 65%, 51%);
+  --rightCyan: hsl(192, 70%, 51%);
+  font-size: 16px;
+  --wrapperSpace: 1.5em;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+  color: var(--blue);
+}
+
+.copy {
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.wrapper {
+  padding: 0 var(--wrapperSpace);
+}
+
+.title__h1 {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+.title__h2 {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+.title__h3 {
+  font-size: 2.5em;
+  color: var(--darkBlue);
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 0.5em;
+  font-size: 1em;
+}
+
+.button {
+  border: none;
+  padding: 0.9em 2.2em;
+  border-radius: 1.5em;
+  color: var(--white);
+  font-size: 1em;
+  background-image: linear-gradient(to right, var(--limaGreen) 0%, var(--rightCyan) 100%);
+}
+
+.icon__facebook {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-facebook.svg");
+}
+.icon__youtube {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-youtube.svg");
+}
+.icon__twitter {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-twitter.svg");
+}
+.icon__pinterest {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-pinterest.svg");
+}
+.icon__instagram {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-instagram.svg");
+}
+
+/*# sourceMappingURL=estilos.css.map */
